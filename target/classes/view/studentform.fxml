@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="850.0" prefWidth="1210.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.finalproject.controller.StudentformController">
+   <children>
+      <Button fx:id="addstudentbutton" layoutX="105.0" layoutY="150.0" mnemonicParsing="false" onAction="#onaddstudentclick" prefHeight="35.0" prefWidth="98.0" style="-fx-background-color: rgba(80, 156, 219, 1);" text="Add Students" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="textsearch" alignment="CENTER" layoutX="419.0" layoutY="22.0" prefHeight="35.0" prefWidth="255.0" promptText="Search name here">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="searchbutton" layoutX="682.0" layoutY="27.0" mnemonicParsing="false" onAction="#pnsearchClick" style="-fx-background-color: rgba(80, 156, 219, 1);" text="Search" />
+      <Button fx:id="deleteStudentButton" layoutX="227.0" layoutY="150.0" mnemonicParsing="false" onAction="#onDeleteStudentclick" prefHeight="35.0" prefWidth="98.0" style="-fx-background-color: rgba(80, 156, 219, 1);" text="Delete Students" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="10.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TableView fx:id="tableStudent" layoutX="103.0" layoutY="266.0" prefHeight="547.0" prefWidth="914.0">
+        <columns>
+          <TableColumn fx:id="idcolumn" prefWidth="119.9999771118164" text="Student_ID" />
+          <TableColumn fx:id="classcoloum" prefWidth="118.40003967285156" text="Class" />
+            <TableColumn fx:id="namecolumn" prefWidth="226.40008544921875" text="Name" />
+            <TableColumn fx:id="emailcolumn" prefWidth="226.4000244140625" text="Email" />
+            <TableColumn fx:id="gradecolumn" prefWidth="110.39996337890625" text="Grade" />
+            <TableColumn fx:id="gendercolumn" prefWidth="112.7999267578125" text="Gender" />
+        </columns>
+      </TableView>
+      <Button fx:id="studentReport" layoutX="357.0" layoutY="155.0" mnemonicParsing="false" onAction="#studentReportOnAction" style="-fx-background-color: rgba(80, 156, 219, 1);" text="Get report" />
+      <JFXButton buttonType="RAISED" layoutX="940.0" layoutY="155.0" onAction="#refreshOnaction" style="-fx-background-color: lightblue;" text="Refresh" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="599.0" prefWidth="808.0" style="-fx-background-color: #20507A;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.finalproject.controller.TeacherAddformController">
+   <children>
+      <Label layoutX="62.0" layoutY="58.0" text="Add Teachers" textFill="WHITE">
+         <font>
+            <Font name="Arial Narrow" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="62.0" layoutY="171.0" text="Full Name" textFill="WHITE">
+         <font>
+            <Font name="Arial Narrow" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="62.0" layoutY="261.0" text="Email Address" textFill="WHITE">
+         <font>
+            <Font name="Arial Narrow" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="418.0" layoutY="171.0" text="T_ID" textFill="WHITE">
+         <font>
+            <Font name="Arial Narrow" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="405.0" layoutY="383.0" text="Phone Number" textFill="WHITE">
+         <font>
+            <Font name="Arial Narrow" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" layoutX="62.0" layoutY="194.0" onKeyReleased="#txtNameOnKeyReleased" prefHeight="26.0" prefWidth="287.0" style="-fx-background-color: #CAD9DE; -fx-text-fill: WHITE; -fx-background-radius: 10;" />
+      <TextField fx:id="email" layoutX="62.0" layoutY="286.0" onKeyReleased="#txtEmailOnKeyReleased" prefHeight="26.0" prefWidth="287.0" style="-fx-background-color: #CAD9DE; -fx-text-fill: WHITE; -fx-background-radius: 10;" />
+      <TextField fx:id="id" layoutX="417.0" layoutY="194.0" onKeyReleased="#txtIdOnKeyReleased" prefHeight="26.0" prefWidth="223.0" style="-fx-background-color: #EEF4F6; -fx-text-fill: BLACK; -fx-background-radius: 10;" />
+      <TextField fx:id="number" layoutX="404.0" layoutY="408.0" onKeyReleased="#txtMobileOnKeyReleased" prefHeight="26.0" prefWidth="223.0" style="-fx-background-color: #CAD9DE; -fx-text-fill: WHITE; -fx-background-radius: 10;" />
+      <Label layoutX="62.0" layoutY="371.0" text="Subject" textFill="WHITE">
+         <font>
+            <Font name="Arial Narrow" size="19.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="savebutton" buttonType="RAISED" layoutX="542.0" layoutY="490.0" onAction="#onsaveclick" prefHeight="30.0" prefWidth="87.0" style="-fx-background-color: #1E90FF; -fx-text-fill: WHITE; -fx-background-radius: 10;" text="Save" />
+      <Label fx:id="lable" layoutX="761.0" layoutY="30.0" textFill="WHITE">
+         <font>
+            <Font name="Arial Narrow" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbSub" layoutX="62.0" layoutY="409.0" prefHeight="30.0" prefWidth="287.0" promptText="Subject" style="-fx-background-color: #CAD9DE; -fx-text-fill: WHITE; -fx-background-radius: 10;" />
+      <RadioButton fx:id="male" layoutX="450.0" layoutY="290.0" mnemonicParsing="false" text="Male" textFill="WHITE">
+         <toggleGroup>
+            <ToggleGroup fx:id="grp" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="female" layoutX="522.0" layoutY="290.0" mnemonicParsing="false" text="Female" textFill="WHITE" toggleGroup="$grp" />
+   </children>
+</AnchorPane>

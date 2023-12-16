@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="850" prefWidth="1530" style="-fx-background-color: #20507A;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.finalproject.controller.DashBoardController">
+   <children>
+      <AnchorPane fx:id="anpane" layoutX="324.0" style="-fx-background-color: #20507A;">
+         <children>
+            <Button fx:id="addadminButton" layoutX="199.0" layoutY="338.0" mnemonicParsing="false" onAction="#onaddadminButtonClick" opacity="0.0" prefHeight="64.0" prefWidth="668.0" style="-fx-background-color: #d3d3d3;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="addteacherButton" layoutX="206.0" layoutY="486.0" mnemonicParsing="false" onAction="#onaddTeacherClick" opacity="0.0" prefHeight="52.0" prefWidth="668.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="addStudentButton" layoutX="199.0" layoutY="616.0" mnemonicParsing="false" onAction="#onaddStudentClick" opacity="0.02" prefHeight="52.0" prefWidth="668.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="337.0" layoutY="340.0" text="Add  other Admin" textFill="WHITE">
+               <font>
+                  <Font name="Bell MT Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="331.0" layoutY="476.0" prefWidth="278.0" text="Add  Teachers" textFill="WHITE">
+               <font>
+                  <Font name="Bell MT Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="331.0" layoutY="606.0" text="Add  Students" textFill="WHITE">
+               <font>
+                  <Font name="Bell MT Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="331.0" layoutY="376.0" text="If you want add another admin ! you can use this and fill the form" textFill="#e7dede">
+               <font>
+                  <Font name="Bell MT" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="331.0" layoutY="511.0" text="If you want to add classes you can use this function and add class." textFill="#e7dede">
+               <font>
+                  <Font name="Bell MT" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="331.0" layoutY="642.0" text="If you want add a new student you can use this function . Fill the form and save it." textFill="#e7dede">
+               <font>
+                  <Font name="Bell MT" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="242.0" layoutY="66.0" text="Welcome to your dashboard, Project Tutor" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold Italic" size="33.0" />
+               </font>
+            </Label>
+            <Label layoutX="532.0" layoutY="106.0">
+               <font>
+                  <Font name="Bell MT Bold" size="33.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="logoutbutton" layoutX="1057.0" layoutY="68.0" onAction="#onLogOutClick" prefHeight="35.0" prefWidth="91.0" style="-fx-background-color: rgba(80, 156, 219, 1);" text="Log out" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="331.0" layoutY="730.0" text="Send Mail" textFill="WHITE">
+               <font>
+                  <Font name="Bell MT Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="331.0" layoutY="765.0" text="If you want add a new student you can use this function . Fill the form and save it." textFill="#e7dede">
+               <font>
+                  <Font name="Bell MT" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="52.0" fitWidth="58.0" layoutX="200.0" layoutY="340.0">
+               <image>
+                  <Image url="@../image/icons8-admin-32.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="204.0" layoutY="486.0">
+               <image>
+                  <Image url="@../image/icons8-teacher-50.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="206.0" layoutY="617.0">
+               <image>
+                  <Image url="@../image/icons8-students-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="snedmailButton" fitHeight="52.0" fitWidth="58.0" layoutX="213.0" layoutY="729.0">
+               <image>
+                  <Image url="@../image/icons8-send-mail-80%20(1).png" />
+               </image>
+            </ImageView>
+            <Button layoutX="203.0" layoutY="735.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="668.0" text="Button" visible="false" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="850.0" prefWidth="324.0" style="-fx-background-color: #34495e;">
+         <children>
+            <ImageView fitHeight="153.0" fitWidth="157.0" layoutX="72.0" layoutY="35.0">
+               <image>
+                  <Image url="@../image/badge.png" />
+               </image>
+            </ImageView>
+            <Line endX="401.4000244140625" endY="273.6000061035156" layoutX="-79.0" layoutY="-23.0" startX="79.0" startY="273.6000061035156" stroke="#f4f1f1" />
+            <Button fx:id="classesButton" layoutX="65.0" layoutY="787.0" mnemonicParsing="false" onAction="#onclassesClick" opacity="0.0" prefHeight="26.0" prefWidth="148.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="examButton" graphicTextGap="30.0" layoutX="61.0" layoutY="767.0" mnemonicParsing="false" onAction="#onExamClick" prefHeight="26.0" prefWidth="148.0" style="-fx-background-color: transparent;" text="Schedule" textFill="#eaeaea">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/calendar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="classesButton" graphicTextGap="30.0" layoutX="77.0" layoutY="682.0" mnemonicParsing="false" onAction="#onclassesClick" prefHeight="26.0" prefWidth="148.0" style="-fx-background-color: transparent;" text="Classes" textFill="#eaeaea">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="billingButton" graphicTextGap="30.0" layoutX="77.0" layoutY="592.0" mnemonicParsing="false" onAction="#onBilingClick" prefHeight="26.0" prefWidth="148.0" style="-fx-background-color: transparent;" text="Billing" textFill="#eaeaea">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="teacherButton" graphicTextGap="30.0" layoutX="68.0" layoutY="494.0" mnemonicParsing="false" onAction="#onTeacherClick" prefHeight="31.0" prefWidth="186.0" style="-fx-background-color: transparent;" text="Teachers" textFill="#eaeaea">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="studentButton" graphicTextGap="30.0" layoutX="67.0" layoutY="398.0" mnemonicParsing="false" onAction="#onStudentClick" prefHeight="31.0" prefWidth="186.0" style="-fx-background-color: transparent;" text="Students" textFill="#eaeaea">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="dashBoardButton" graphicTextGap="30.0" layoutX="69.0" layoutY="300.0" mnemonicParsing="false" onAction="#ondashBoardClick" prefHeight="33.0" prefWidth="185.0" style="-fx-background-color: transparent;" text="Dashboard" textFill="#eaeaea">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="33.0" fitWidth="32.0" layoutX="74.0" layoutY="300.0">
+               <image>
+                  <Image url="@../image/dashboard.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="32.0" layoutX="72.0" layoutY="399.0">
+               <image>
+                  <Image url="@../image/student.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="32.0" layoutX="74.0" layoutY="491.0">
+               <image>
+                  <Image url="@../image/icons8-teachers-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="32.0" layoutX="72.0" layoutY="593.0">
+               <image>
+                  <Image url="@../image/icons8-payments-24.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="32.0" layoutX="72.0" layoutY="678.0">
+               <image>
+                  <Image url="@../image/icons8-classes-64.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Line endX="1217.4000244140625" endY="273.6000061035156" layoutX="317.0" layoutY="-22.0" startX="7.199999809265137" startY="273.6000061035156" />
+   </children>
+</AnchorPane>

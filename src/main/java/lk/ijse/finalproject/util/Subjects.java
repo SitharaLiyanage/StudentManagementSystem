@@ -1,0 +1,37 @@
+package lk.ijse.finalproject.util;
+
+public enum Subjects {
+    MATHEMATICS,
+    SINHALA,
+    TAMIL,
+    ENGLISH,
+    SCIENCE,
+    HISTORY,
+    BUDDHISM,
+    ISLAMIC_STUDIES,
+    CATHOLIC_CHRISTIANITY,
+    GEOGRAPHY,
+    COMMERCE,
+    BUSINESS_STUDIES,
+    ECONOMICS,
+    ACCOUNTING,
+    ICT,
+    AGRICULTURE,
+    HOME_ECONOMICS,
+    ART,
+    MUSIC,
+    DANCING,
+    DRAMA,
+    HEALTH,
+    PHYSICAL_EDUCATION,
+    BIOLOGY,
+    CHEMISTRY,
+    PHYSICS,
+    PETROLOGY,
+    ZOOLOGY,
+    GEOLOGY,
+    COMBINED_MATH,
+    APPLIED_MATH,
+
+}
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="0.0" prefWidth="1160.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.finalproject.controller.studentobjformController">
+   <children>
+      <TextField fx:id="id" alignment="CENTER" layoutY="7.0" prefHeight="0.0" prefWidth="140.0">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font></TextField>
+      <TextField fx:id="name" alignment="CENTER" layoutX="153.0" layoutY="7.0" prefHeight="0.0" prefWidth="166.0">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font></TextField>
+      <TextField fx:id="clss" alignment="CENTER" layoutX="336.0" layoutY="7.0" prefHeight="4.0" prefWidth="110.0">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font></TextField>
+      <TextField fx:id="email" alignment="CENTER" layoutX="478.0" layoutY="7.0" prefHeight="14.0" prefWidth="254.0">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font></TextField>
+      <TextField fx:id="gender" alignment="CENTER" layoutX="800.0" layoutY="7.0" prefHeight="0.0" prefWidth="92.0">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font></TextField>
+      <ImageView fx:id="morebutton" fitHeight="26.0" fitWidth="28.0" layoutX="981.0" layoutY="11.0" onMouseClicked="#onclick">
+         <image>
+            <Image url="@../image/more.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

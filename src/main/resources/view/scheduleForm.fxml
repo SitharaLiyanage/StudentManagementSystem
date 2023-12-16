@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pane" prefHeight="850.0" prefWidth="1210.0" style="-fx-background-color: #20507A#34495e;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.finalproject.controller.ScheduleClassFormController">
+   <children>
+      <ComboBox fx:id="cmbClass" layoutX="69.0" layoutY="92.0" onAction="#cmbClassOnAction" prefWidth="150.0" promptText="Select Class" />
+      <ComboBox fx:id="cmbTeacher" layoutX="289.0" layoutY="92.0" onAction="#cmbTeacherOnAction" prefWidth="150.0" promptText="Select Teacher" />
+      <ComboBox fx:id="cmbHall" layoutX="512.0" layoutY="92.0" onAction="#cmbHallOnAction" prefWidth="150.0" promptText="Select Hall" />
+      <DatePicker fx:id="txtDate" layoutX="708.0" layoutY="92.0" onAction="#txtDateOnAction" promptText="Select Date" />
+      <TextField fx:id="txtTime" layoutX="70.0" layoutY="184.0" onKeyReleased="#txtTimeOnKeyReleased" promptText="Time" />
+      <Button layoutX="770.0" layoutY="184.0" mnemonicParsing="false" onAction="#btnSheduleClassOnAction" text="Schedule Class" />
+      <TextArea fx:id="txtEmail" layoutX="70.0" layoutY="285.0" prefHeight="200.0" prefWidth="804.0" style="-fx-background-color: #E0EEEF; -fx-border-color: #E0EEEF;" />
+      <TableView fx:id="tblStudents" layoutX="70.0" layoutY="563.0" prefHeight="200.0" prefWidth="804.0" style="-fx-background-color: #E0EEEF;">
+        <columns>
+          <TableColumn fx:id="colStudentName" prefWidth="437.59999084472656" text="Student Name" />
+          <TableColumn fx:id="colEmail" prefWidth="366.3999938964844" text="Email" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

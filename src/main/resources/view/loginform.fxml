@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1530.0" style="-fx-background-color: #2c3e50;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.finalproject.controller.loginController">
+   <children>
+      <AnchorPane layoutX="661.0" layoutY="93.0" prefHeight="680.0" prefWidth="792.0" style="-fx-background-color: #34495e; -fx-border-radius: 10; -fx-background-radius: 10;">
+         <children>
+            <Label layoutX="202.0" layoutY="37.0" text="Welcome, Log into your account" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="255.0" layoutY="80.0" text="It is our great pleasure to have you on board!" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" layoutX="235.0" layoutY="277.0" prefHeight="34.0" prefWidth="320.0" promptText="Username" />
+            <PasswordField fx:id="password" layoutX="235.0" layoutY="363.0" prefHeight="34.0" prefWidth="320.0" promptText="Password" />
+            <Label layoutX="262.0" layoutY="424.0" text="Don't have an account?" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="signup" layoutX="432.0" layoutY="424.0" onMouseClicked="#onsignupClick" text="Sign up" textFill="#2d88d4">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="text" layoutX="245.0" layoutY="332.0" prefHeight="15.0" prefWidth="147.0" textFill="RED">
+               <font>
+                  <Font name="Arial Italic" size="12.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="loginButton" layoutX="250.0" layoutY="476.0" onAction="#onLoginClick" prefHeight="34.0" prefWidth="270.0" style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-border-radius: 5; -fx-background-radius: 5;" text="Login" />
+            <ImageView fitHeight="18.0" fitWidth="22.0" layoutX="599.0" layoutY="646.0">
+               <image>
+                  <Image url="@../image/icons8-copyright-26.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="630.0" layoutY="646.0" prefHeight="18.0" prefWidth="147.0" text="2023 All Right Reserved" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="99.0" layoutY="93.0" prefHeight="680.0" prefWidth="560.0">
+         <children>
+            <ImageView fitHeight="407.0" fitWidth="426.0" layoutX="67.0" layoutY="75.0" opacity="0.8">
+               <image>
+                  <Image url="@../image/badge.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
